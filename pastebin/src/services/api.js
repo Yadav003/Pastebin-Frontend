@@ -1,6 +1,6 @@
 
 const API_URL = import.meta.env.VITE_API_URL || 
-  (import.meta.env.PROD ? `${window.location.origin}/api` : 'http://localhost:3000/api');
+  (import.meta.env.PROD ? `http://pastebin-backend-i1c2.onrender.com/api` : 'http://pastebin-backend-i1c2.onrender.com/api');
 
 async function readJsonOrText(response) {
   const contentType = response.headers.get('content-type') || '';
